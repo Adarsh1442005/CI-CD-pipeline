@@ -2,13 +2,10 @@
   "name": "ci-cd-pipeline",
   "version": "1.0.0",
   "main": "index.js",
-  
-    "scripts": {
-  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-}
-
-,
-  "type":"module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Adarsh1442005/CI-CD-pipeline.git"
@@ -23,5 +20,11 @@
   "description": "",
   "devDependencies": {
     "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2",
+    "supertest": "^7.1.4"
   }
 }
