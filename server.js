@@ -4,6 +4,7 @@ import { user } from './schema.js';
 import cors from 'cors';
 
 export const app=express();
+const port=process.env.PORT|| 3000;
 
 
 
@@ -34,7 +35,11 @@ const getuser= async (req,res)=>{
 const del=async ()=>{
    await user.deleteMany({});
 }
-del();
+// del();
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
 
 
 app.get('/users',getuser);
